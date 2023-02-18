@@ -1,0 +1,415 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.container{
+    width: 1270px;
+    margin: 0 auto;
+}
+
+.padding {
+    padding: 0 70px;
+}
+
+/* .jsc{
+    justify-content: space-evenly;
+
+} */
+.row{
+    display:flex ;
+    flex-wrap: wrap;
+}
+.align{
+    align-items: center;
+}
+.logo img{
+    margin: 30px 0;
+    width: 300px;
+    /* height: 100px; */
+}
+.navbar {
+    background-color:#054C67;
+    border-radius: 27px 0 0 27px;
+    padding: 30px;
+    width: 60%;
+}
+.navbar ul {
+    display: flex;
+
+}
+
+.navbar ul li{
+    padding: 10px 20px;
+}
+.navbar ul li a{
+    color: white;
+    padding: 0px 20px;
+
+}
+
+
+/* ----sec-1---- */
+.sec-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.col-50{
+    width: 50%;
+}
+
+.sec1-text {
+    width: 100%;
+    background-color: #054C67;
+    padding: 20px;
+    border-radius: 0px 30px 30px 0px;
+    text-align: center;
+}
+
+.sec1-text h2{
+    /* width: 48%; */
+    font-size: 45px;
+    color: white;
+    padding: 20px 5px;
+}
+
+.sec1-text span{
+    color: yellow;
+}
+
+.btn .btn1 {
+    padding: 10px 90px;
+    display: block;
+    text-align: center;
+    margin-left: 50px;
+    border-radius: 10px;
+    border: none;
+}
+
+.btn .btn2 {
+    background: transparent;
+    border:1px solid white;
+    color: white;
+    padding: 5px 20px;
+    margin: 20px 10px;
+    border-radius: 3px;
+}
+
+.img{
+    align-items: center;
+    text-align: center;
+}
+
+.img img{
+    width: 60%;
+}
+
+/* -----sec-2---- */
+.col-25 {
+    width: 20%;
+}
+.sec-2{
+    width: 90%;
+    /* height: 200px; */
+    margin: 30px auto;
+    background-color: #054C67;
+    background-size: cover;
+    padding: 5px 0;
+    color: white;
+    border-radius: 30px;
+}
+
+.sec-2 h2 {
+    padding: 0 60px;
+    font-size: 32px;
+    word-spacing: 5px;
+    font-family: sans-serif;
+}
+
+.sec-2 span{
+    font-size: 60px;
+    padding: 10px 20px;
+}
+
+.box {
+    padding: 64px 20px 15px 50px;
+    border: 1px solid white;
+    border-radius: 50px 0px;
+    margin: 20px 0;
+    box-shadow: 1px 2px 6px 0px black;
+  
+}
+.jsa{
+    justify-content: space-evenly;
+}
+.col-30{
+    width: 30%;
+}
+.sec2-img img{
+    width: 100%;
+    height: 6rem;
+}
+.Company{
+    background-color: white;
+    border-radius: 0px 0 30px 30px;
+    margin: 30px;
+    padding: 30px 0;
+    color: black;
+    text-align: center;
+}
+.sec2-img i{
+    color: yellow;
+    /* text-align: center; */
+    /* align-items: center; */
+    /* margin: 0 auto; */
+}
+
+/* ----sec-3---- */
+.sec-3{
+    width: 90%;
+    margin: 0 auto;
+}
+.sec-3bg{
+    background:linear-gradient(90deg,#095775 50% ,white);
+    /* height: 100vh; */
+    background-size: cover;
+}
+
+.placement {
+    color: white;
+    margin-top: 60px;
+}
+
+.placement h2{
+    color: yellow;
+    font-size: 30px;
+}
+
+.placement p{
+    font-size: 20px;
+    /* padding: 10px 10px; */
+}
+
+.placement ol{
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 40px 10px;
+    line-height: 25px;
+}
+
+.btn-3 button{
+    padding: 7px 90px;
+}
+
+.sec3-img img{
+    width: 100%;
+}
+
+/* .....sec-4..... */
+
+.col-20{
+    width: 18%;
+}
+
+.sec-4{
+    text-align: center;
+}
+.sec-4 h2{
+    font-size: 30px;
+    color: blue;
+    display: inline-block;
+    margin: 50px 0;
+    border-bottom: 2px solid blue;
+}
+
+.sec4-img img{
+    background: white;
+    width: 100%;
+    padding: 30px 0;
+    height: 150px;
+}
+
+.sec4-img img:hover{
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+.placed {
+    margin: 90px 0;
+}
+
+.sec4-img-placed img {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.sec4-img-placed img:hover {
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+.sec4-img-img img{
+    width: 100%;
+    margin: 55px 0;
+}
+
+/* .......sec-5..... */
+.sec-5{
+    text-align: center;
+}
+.sec-5 h2 {
+    font-size: 40px;
+    text-align: center;
+    color: blue;
+    display: inline-block;
+    border-bottom: 2px solid blue;
+    margin: 50px 0;
+}
+
+.sec5-img img{
+    width: 100%;
+}
+
+.sec5-img img:hover{
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+/* ....sec-6.... */
+.sec-7 {
+    text-align: center;
+}
+
+.sec-7 h2 {
+    font-size: 40px;
+    text-align: center;
+    color: blue;
+    display: inline-block;
+    border-bottom: 2px solid blue;
+    margin: 50px 0;
+}
+
+.sec7-img img{
+    width: 100%;
+    height: 300px;
+    padding: 30px 50px;
+}
+
+/* ....sec-8..... */
+.sec-8 {
+    text-align: center;
+}
+
+
+.sec-8 h2 {
+    font-size: 40px;
+    text-align: center;
+    color: blue;
+    display: inline-block;
+    border-bottom: 2px solid blue;
+    margin: 50px 0;
+}
+
+.sec-8 p {
+    font-size: 15px;;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+.sec8-img {
+    margin: 20px 0;
+    padding-bottom: 10px;
+    border-radius: 20px;   
+}
+
+.sec8-img:hover{
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+.sec8-img button{
+    padding: 5px 30px;
+    background-color: rgba(0, 0, 0, 0.512);
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    
+}
+
+.sec8-img img {
+    border-radius: 20px;
+    width: 100%;
+}
+
+/* .......sec-9........ */
+.sec-9 {
+    text-align: center;
+}
+
+
+.sec-9 h2 {
+    font-size: 40px;
+    text-align: center;
+    color: blue;
+    width: 50%;
+    border-bottom: 2px solid blue;
+    margin: 50px 0;
+}
+
+
+/* ......footer...... */
+.bg-footer {
+    background-image: linear-gradient(rgb(49, 43, 43), rgb(54, 52, 52));
+}
+
+.footer {
+    padding-top: 70px;
+}
+
+.footer h2 {
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.img-logo img {
+    width: 100%;
+}
+
+.img-logo p {
+    padding-top: 40px;
+    color: rgb(161, 160, 160);
+}
+
+.social-img {
+    padding-top: 40px;
+
+}
+
+.social img {
+    width: 40%;
+    display: block;
+}
+
+.menu ul {
+    padding-top: 40px;
+}
+.menu ul li {
+    color: rgb(170, 167, 167);
+    list-style: disc;
+    padding: 7px 0;
+}
+
+.cg-road {
+    background-color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    padding: 5px 0;
+    margin: 15px 0;
+}
+
+.copyright {
+    color: #d3cdcd;
+    padding: 10px 0;
+}
