@@ -26,14 +26,13 @@
 /* section-1 */
 .bg-1 {
     background-color: #e9e7e7;
-    height: 700px;
+    /* height: 700px; */
 }
 
-nav ul {
+/* nav ul {
     display: flex;
 }
-nav ul li{
-    
+nav ul li{ 
     text-align: center;
 }
 ul li a {
@@ -59,7 +58,117 @@ ul li a:hover{
 
 .text a {
     color: grey;
+} */
+
+.navbar {
+    width: 1260px;
 }
+
+nav{
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+}
+
+label .logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active, a:hover {
+    background: #1b9bff;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 40px;
+    color: white;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.travels-logo img {
+    width: 114px;
+    height: 80px;
+}
+
+
+@media (max-width: 952px) {
+    label .logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        transition: all .5s;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover, a.active{
+        background: none;
+        color: #0082e6;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+
 
 .z-index{
     z-index: 1;
@@ -245,7 +354,6 @@ span i {
 
 /* section-4 */
 .sec4-img1 img {
-    /* padding-left: 90px; */
     height: 650px;
 }
 
@@ -527,119 +635,193 @@ footer ul li{
 }
 
 
-@media screen and (max-width: 650px) {
-    .container {
-        overflow-x: hidden;
-    }
-
-    nav {
+@media screen and (max-width: 768px) {
+    .navbar {
         width: 100%;
-    }
-
-    nav ul li {
-        padding: 0 10px;
-    }
-
-    nav ul li a {
-        font-size: 40px;
-    }
-
-    .btn-1 button {
-        font-size: 25px;
-    }
-
-    .travel {
-        padding: 10px 0px;
-        width: 100%;
-    }
-
-    .travel p {
-        width: 100%;
-        font-size: 25px;
     }
 }
 
-@media screen and (max-width: 768px) {
-    nav {
+@media screen and (max-width: 420px) {
+    .navbar {
         width: 100%;
     }
 
-    nav ul li {
-        padding: 0 10px;
+    .checkbtn {
+        font-size: 60px;
     }
 
-    nav ul li a {
-        font-size: 40px;
+    .col-50 {
+        width: 100%;
     }
 
-    .btn-1 button {
-        font-size: 25px;
+    .col-30 {
+        width: 100%;
+    }
+
+    .row {
+        flex-direction: column;
+        /* display: inline-block; */
+    }
+
+    .sketch1 {
+        display: none;
+    }
+
+    .sketch2 {
+        display: none;
+    }
+
+    .sec-2-img1 {
+        display: none;
+    }
+
+    .sec-2-img2 {
+        display: none;
+    }
+
+    .img-3 {
+        display: none;
+    }
+
+    .img-5 {
+        display: none;
+    }
+    
+    .img-4 {
+        display: none;
+    }
+    
+    .img-6 {
+        display: none;
+    }
+    
+    .sec5-img1 {
+        display: none;
+    }
+    
+    .sec7-sketch1 {
+        display: none;
+    }
+
+    .sec7-sketch2 {
+        display: none;
     }
 
     .travel {
-        padding: 10px 0px;
-        width: 100%;
+        margin: 20px 0;
     }
 
     .travel p {
+        font-size: 35px;
+    }
+
+    .btn-2 button {
+        padding: 30px 70px;
+        font-size: 30px;
+        border-radius: 10px;
+    }
+
+    .create {
         width: 100%;
-        font-size: 25px;
     }
 
     .create p {
-        width: 100%;
-        font-size: 25px;
-        letter-spacing: 2px;
+        font-size: 33px;
     }
-    
+
+    .create h2 {
+        font-size: 70px;
+    }
+
+    .btn-3 button {
+        font-size: 33px;
+    }
+
+    .image {
+        text-align: center;
+    }
+
     .image h3 {
-        width: 100%;
-        font-size: 30px;
+        font-size: 32px;
+        margin: 30px auto;
+    }
+
+    .image p {
+        margin: 0px auto;
+        font-size: 24px;
+    }
+
+    .airplace h3 {
+        width: 65%;
+    }
+
+    .airplace p {
+        font-size: 40px;
     }
     
-    .image p {
-        font-size: 25px;
-        letter-spacing: 1px;
+    .sec4-img1  img{
+        width: 100%;
+    }
+
+    .sec4-img2-img {
+        margin: 20px 0px;
+        width: 70%;
+    }
+
+    .sec4-img4 {
+        padding: 30px 0px;
     }
 
     .head {
-        font-size: 40px;
+        font-size: 47px;
+        width: 67%;
     }
 
     .para p {
-        font-size: 20px;
+        width: 52%;
+        font-size: 34px;
+        word-spacing: 5px;
+    }
+
+    .bg-3 {
+        min-height: 1520px;
+    }
+
+    .sec5-head {
+        width: 100%;
+        font-size: 50px;
+        margin: 50px 0;
+    }
+
+    .sec5-text {
+        /* margin: 50px auto; */
+        width: 100%;
+    }
+
+    .sec5-text h3 {
+        font-size: 60px;
+    }
+
+    .sec5-text p {
+        font-size: 30px;
+        margin: 15px 0px;
+        word-spacing: 2px;
+    }
+
+    .sec5-img img {
+        width: 100%;
+        min-height: 740px;
     }
 
     .sec6-text p {
-        padding: 5px 10px;
-        font-size: 30px;
-        width: 100%;
-        letter-spacing: 2px;
+        padding: 15px 0px;
+        font-size: 35px;
     }
 
     .sec6-text img {
-        padding: 0 20px;
+        margin: 23px auto;
+        height: 30px;
     }
 
-    .sec7-img h3 {
-        font-size: 30px;
-    }
 
-    .sec7-img p {
-        margin: 0;
-        width: 100%;
-        font-size: 20px;
-    }
-
-    .sec7-text {
-        margin: 47px 0px;
-    }
-
-    footer h4 {
-        font-size: 30px;
-    }
-
-    footer ul li {
-        font-size: 25px;
-    }
 }

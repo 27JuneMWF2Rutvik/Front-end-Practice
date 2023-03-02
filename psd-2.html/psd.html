@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -16,20 +18,26 @@
                 <img src="./image/sec1-sketch1.png" alt="" class="sketch1 pos-ab">
                 <img src="./image/sec1-sketch2.png" alt="" class="sketch2 pos-ab">
             </div>
-            <div class="main">
-                <div class="navbar">
-                    <nav>
-                        <ul>
-                            <li class="home"><a href="#">Home</a></li>
-                            <li class="text"><a href="#">Guides</a></li>
-                            <li class="text"><a href="#">Flight</a></li>
-                            <li class="text"><a href="#">About</a></li>
-                        </ul>
-                    </nav>
-                    <div class="btn-1">
-                        <button>Contact Us</button>
+            <div class="navbar">
+                <nav>
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <i class="fa fa-bars"></i>
+                    </label>
+                    <!-- <label class="logo">Disignx</label> -->
+                    <ul>
+                        <li><a class="active" href="#">Home</a></li>
+                        <li><a href="#">Guides</a></li>
+                        <li><a href="#">Flight</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                    <div class="travels-logo">
+                        <img src="image/travels-logo.png" alt="">
+                        <!-- <p>Travelers</p> -->
                     </div>
-                </div>
+                </nav>
+            </div>
+            <div class="main">
                 <div class="row">
                     <div class="col-50  z-index">
                         <div class="travel">
@@ -133,7 +141,7 @@
                     </div>
                     <div class="col-50">
                         <div class="sec4-img2">
-                            <img src="./image/sec4-img2.png" alt="">
+                            <img class="sec4-img2-img" src="./image/sec4-img2.png" alt="">
                             <div class="row">
                                 <div class="col-50">
                                     <div class="head">
@@ -292,7 +300,8 @@
                             <input type="text" name="name" placeholder="First Name*">
                             <input type="text" name="name" placeholder="Last Name*">
                             <input type="text" name="email" placeholder="Email Subject*">
-                            <textarea name="" id="" cols="54" rows="10" placeholder="Write Something here..."></textarea>
+                            <textarea name="" id="" cols="54" rows="10"
+                                placeholder="Write Something here..."></textarea>
                             <div class="sec8-btn">
                                 <button>Submit Email</button>
                             </div>
