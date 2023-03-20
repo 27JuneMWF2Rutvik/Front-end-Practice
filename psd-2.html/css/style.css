@@ -29,37 +29,6 @@
   /* height: 700px; */
 }
 
-/* nav ul {
-    display: flex;
-}
-nav ul li{ 
-    text-align: center;
-}
-ul li a {
-    padding: 0px 25px 0px 25px;
-}
-
-ul li a:hover{
-    transition: all 2s;
-    outline: 2px solid;
-    color: #e9e7e7;
-    background-color: brown;
-}
-
-.navbar {
-    padding: 60px 0px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.home a {
-    color: black;
-}
-
-.text a {
-    color: grey;
-} */
-
 .navbar {
   width: 1267px;
 }
@@ -216,10 +185,6 @@ a:hover {
   background-color: #232323;
 }
 
-/* .btn-2 button:hover {
-  outline: 5px solid aqua;
-} */
-
 .sec1-img1 img {
   width: 100%;
 }
@@ -270,13 +235,6 @@ a:hover {
   color: #fffefe;
   background-color: #232323;
 }
-
-/* .btn-3 button:hover {
-  transition: all 3s;
-  background-color: rgba(255, 255, 255, 0.48);
-  color: black;
-  box-shadow: 0px 0px 10px 0px #fffefe;
-} */
 
 .sec-2-img1 {
   left: -110px;
@@ -921,191 +879,15 @@ footer ul li {
   left: -415px;
 }
 
-@media screen and (max-width: 768px) {
-  .navbar {
+@media screen and (max-width: 700px) {
+  .row{
+    flex-wrap: wrap;
+  }
+  .col-50{
     width: 100%;
+  }
+  .col-30{
+    width: 50%;
   }
 }
-
-@media screen and (max-width: 420px) {
-  .navbar {
-    width: 100%;
-  }
-
-  .checkbtn {
-    font-size: 60px;
-  }
-
-  .col-50 {
-    width: 100%;
-  }
-
-  .col-30 {
-    width: 100%;
-  }
-
-  .row {
-    flex-direction: column;
-    /* display: inline-block; */
-  }
-
-  .sketch1 {
-    display: none;
-  }
-
-  .sketch2 {
-    display: none;
-  }
-
-  .sec-2-img1 {
-    display: none;
-  }
-
-  .sec-2-img2 {
-    display: none;
-  }
-
-  .img-3 {
-    display: none;
-  }
-
-  .img-5 {
-    display: none;
-  }
-
-  .img-4 {
-    display: none;
-  }
-
-  .img-6 {
-    display: none;
-  }
-
-  .sec5-img1 {
-    display: none;
-  }
-
-  .sec7-sketch1 {
-    display: none;
-  }
-
-  .sec7-sketch2 {
-    display: none;
-  }
-
-  .travel {
-    margin: 20px 0;
-  }
-
-  .travel p {
-    font-size: 35px;
-  }
-
-  .btn-2 button {
-    padding: 30px 70px;
-    font-size: 30px;
-    border-radius: 10px;
-  }
-
-  .create {
-    width: 100%;
-  }
-
-  .create p {
-    font-size: 33px;
-  }
-
-  .create h2 {
-    font-size: 70px;
-  }
-
-  .btn-3 button {
-    font-size: 33px;
-  }
-
-  .image {
-    text-align: center;
-  }
-
-  .image h3 {
-    font-size: 32px;
-    margin: 30px auto;
-  }
-
-  .image p {
-    margin: 0px auto;
-    font-size: 24px;
-  }
-
-  .airplace h3 {
-    width: 65%;
-  }
-
-  .airplace p {
-    font-size: 40px;
-  }
-
-  .sec4-img1 img {
-    width: 100%;
-  }
-
-  .sec4-img2-img {
-    margin: 20px 0px;
-    width: 70%;
-  }
-
-  .sec4-img4 {
-    padding: 30px 0px;
-  }
-
-  .head {
-    font-size: 47px;
-    width: 67%;
-  }
-
-  .para p {
-    width: 52%;
-    font-size: 34px;
-    word-spacing: 5px;
-  }
-
-  .bg-3 {
-    min-height: 1520px;
-  }
-
-  .sec5-head {
-    width: 100%;
-    font-size: 50px;
-    margin: 50px 0;
-  }
-
-  .sec5-text {
-    /* margin: 50px auto; */
-    width: 100%;
-  }
-
-  .sec5-text h3 {
-    font-size: 60px;
-  }
-
-  .sec5-text p {
-    font-size: 30px;
-    margin: 15px 0px;
-    word-spacing: 2px;
-  }
-
-  .sec5-img img {
-    width: 100%;
-    min-height: 740px;
-  }
-
-  .sec6-text p {
-    padding: 15px 0px;
-    font-size: 35px;
-  }
-
-  .sec6-text img {
-    margin: 23px auto;
-    height: 30px;
-  }
-}
+/*    */
