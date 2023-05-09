@@ -1,0 +1,133 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.bg-black {
+	/* background-color: rgb(7, 7, 7); */
+	background-color: black;
+}
+
+.header {
+	/* text-align: center; */
+}
+
+.Rectangle {
+	width: 47px;
+	height: 14px;
+	background-color: #ff0000;
+	border: 5px solid #ff0000;
+	/* text-align: center; */
+	margin: 0 auto;
+}
+
+nav ul {
+	display: flex;
+	justify-content: center;
+}
+
+nav ul li {
+	list-style: none;
+	padding: 0 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 200px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	font-size: 20px;
+	text-transform: uppercase;
+	transition: all 1s;
+}
+
+nav ul li a:hover {
+	color: #ff0000;
+}
+
+.active {
+	color: #ff0000;
+	border-bottom: 1px solid #ff0000;
+}
+
+.home {
+	background-image: radial-gradient(circle at 18.7% 37.8%, rgba(0, 0, 0, 0.82) 0%, rgba(240, 241, 241, 0) 90%),
+		url("../img/img-1.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.halloween {
+	color: #ff0000;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* margin: 70px 0; */
+}
+
+.halloween h2 {
+	font-family: 'Bruno Ace SC', cursive;
+	font-size: 70px;
+	letter-spacing: 6px;
+}
+
+.halloween h4 {
+	letter-spacing: 6px;
+	margin: 10px 0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.halloween h3 {
+	letter-spacing: 60px;
+	margin-top: 10px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.left-right {
+	display: flex;
+	align-items: center;
+}
+
+.halloween .right {
+	display: flex;
+	width: 240px;
+	margin-right: 5px;
+	height: 2px;
+	background-color: #ff0000;
+	border-right: 4px solid #ff0000;
+}
+
+.halloween .left {
+	display: flex;
+	width: 240px;
+	height: 2px;
+	background-color: #ff0000;
+	border-left: 4px solid #ff0000;
+}
+
+.halloween-night {
+	/* radial-gradient(circle at 18.7% 37.8%, rgba(0, 0, 0, 0.82) 0%, rgba(240, 241, 241, 0) 90%), */
+	background-color: black;
+	backdrop-filter: invert(80%);
+	opacity: 0.6;
+	width: 50%;
+}
+
+.halloween-text {
+	margin: 10px 30px;
+}
+
+.halloween-text h3 {
+	color: #ff0000;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.halloween-text p {
+	color: #f0e6e6;
+	width: 50%;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
