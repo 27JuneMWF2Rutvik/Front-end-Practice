@@ -8,16 +8,11 @@
 	background-color: black;
 }
 
-.header {
-	/* text-align: center; */
-}
-
 .Rectangle {
 	width: 47px;
-	height: 14px;
+	height: 10px;
 	background-color: #ff0000;
 	border: 5px solid #ff0000;
-	/* text-align: center; */
 	margin: 0 auto;
 }
 
@@ -38,8 +33,11 @@ nav ul li {
 
 nav ul li a {
 	text-decoration: none;
-	font-size: 20px;
+	font-size: 18px;
 	text-transform: uppercase;
+	color: #f0e6e6;
+	font-family: Arial, Helvetica, sans-serif, Courier, monospace;
+	font-weight: 500;
 	transition: all 1s;
 }
 
@@ -57,6 +55,7 @@ nav ul li a:hover {
 		url("../img/img-1.png");
 	background-repeat: no-repeat;
 	background-position: center;
+	height: 900px;
 }
 
 .halloween {
@@ -64,7 +63,6 @@ nav ul li a:hover {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	/* margin: 70px 0; */
 }
 
 .halloween h2 {
@@ -107,27 +105,94 @@ nav ul li a:hover {
 	border-left: 4px solid #ff0000;
 }
 
+.night {
+	margin: 25em 0;
+}
+
 .halloween-night {
-	/* radial-gradient(circle at 18.7% 37.8%, rgba(0, 0, 0, 0.82) 0%, rgba(240, 241, 241, 0) 90%), */
-	background-color: black;
-	backdrop-filter: invert(80%);
-	opacity: 0.6;
+	background-image: radial-gradient(circle at 18.7% 37.8%, rgb(27, 26, 26) 0%, rgba(18, 18, 18, 0.425) 90%);
 	width: 50%;
 }
 
 .halloween-text {
-	margin: 10px 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 90px;
 }
 
 .halloween-text h3 {
 	color: #ff0000;
 	font-size: 20px;
+	margin: 20px 0;
 	text-transform: uppercase;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .halloween-text p {
 	color: #f0e6e6;
-	width: 50%;
+	width: 90%;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.arrow {
+	text-align: right;
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+
+/* section-2 */
+.row {
+	display: flex;
+}
+
+.col-50{
+	width: 50%;
+}
+
+.about {
+	padding: 5em 0;
+}
+
+.about h2 {
+	color: #ff0000;
+	font-size: 50px;
+	text-align: center;
+	font-family: 'Rubik Dirt', cursive;
+}
+
+.about-us{
+	color: #f0e6e6;
+	padding: 0 90px;
+}
+
+.about-text {
+	/* margin: 50em 0; */
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	padding-right:5px;
+}
+
+.about-text p {
+	margin: 40px 0;
+	letter-spacing: 1px;
+}
+
+/* section-3 */
+.night-img img{
+	width: 100%;
+	filter: grayscale(80%)
+}
+.aligne{
+	align-items: center;
+}
+
+.night-text {
+	color: #f0e6e6;
+	height: 500px;
+}
+
+.night-text h2{
+	font-size: 117px;
+	font-family: 'Rubik Dirt', cursive;
+	/* line-height: 120px; */
 }
