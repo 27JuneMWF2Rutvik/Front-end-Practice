@@ -188,11 +188,79 @@ nav ul li a:hover {
 
 .night-text {
 	color: #f0e6e6;
-	height: 500px;
+	height: 600px;
 }
 
 .night-text h2{
 	font-size: 117px;
 	font-family: 'Rubik Dirt', cursive;
 	/* line-height: 120px; */
+}
+
+.night-text p{
+	margin: 40px 0;
+	font-size: 17px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	letter-spacing: 1px;
+	width: 70%;
+	text-align: justify;
+}
+
+/* .night-text button{
+	color: aliceblue;
+	padding: 10px 50px;
+	border-radius: 20px;
+	font-size: 15px;
+	font-family: 'Rubik Dirt', cursive;
+	background-color: transparent;
+	border: 2px solid whitesmoke;
+} */
+
+.btn {
+	padding: 10px 50px;
+	border-radius: 20px;
+	font-family: 'Rubik Dirt', cursive;
+	background-color: transparent;
+	border: 2px solid whitesmoke;
+    color: aliceblue;
+    border: 2px solid #f0e6e6;
+    position: relative;
+    z-index: 1;
+    transition: color 400ms;
+	overflow: hidden;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(249, 47, 36, 0.918);
+    z-index: -1;
+    transition: transform 400ms ease-out;
+    transform: scaleX(0);
+	transform-origin: right;
+}
+
+.btn:hover::before {
+	transform-origin: left;
+	transform: scaleX(1);
+}
+
+.btn:hover {
+    color: #fff;
+}
+
+.col-33 {
+	width: 33.33%;
+}
+
+.slide-text {
+	background-color: #ff0000;
+}
+
+.slide-text {
+	color: #f0e6e6;
 }
