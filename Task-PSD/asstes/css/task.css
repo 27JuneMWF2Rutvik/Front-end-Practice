@@ -1,0 +1,176 @@
+@font-face {
+    font-family: montserrat;
+    src: url("../fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: incised;
+    src: url("../fonts/Incised\ 901.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.justify {
+    justify-content: space-between;
+}
+
+.align-items {
+    align-items: center;
+}
+
+.pos-rel {
+    position: relative;
+}
+
+.pos-ab {
+    position: absolute;
+}
+
+.top-line p {
+    background-color: antiquewhite;
+    font-size: 18px;
+    text-align: center;
+    font-family: montserrat;
+    padding: 8px 0;
+}
+
+
+
+header {
+    background-color: #fff;
+    box-shadow: 2px 2px 4px black;
+
+}
+
+nav {
+    padding: 15px 0;
+}
+
+.logo img {
+    display: block;
+    width: 100%;
+}
+
+.icon ul li,
+.header_text ul li {
+    display: inline-block;
+    padding: 0 20px;
+    font-family: montserrat;
+    text-transform: uppercase;
+}
+
+.icon ul li a,
+.header_text ul li a {
+    color: #000;
+}
+
+/* section-1 */
+
+
+
+.sec_1 {
+    background-color: antiquewhite;
+    background-image: url("../img/bg.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 50px 0;
+}
+
+.home_text {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.home_text h1 {
+    color: #C99A58;
+    font-weight: 900;
+    font-size: 75px;
+    line-height: 125px;
+    text-transform: uppercase;
+    font-family: montserrat;
+}
+
+.home_text h2 {
+    color: #C99A58;
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 100px;
+    margin-left: 90px;
+    text-transform: uppercase;
+    font-family: montserrat;
+}
+
+.home_text h3 {
+    color: #0000009e;
+    font-weight: 900;
+    font-size: 125px;
+    margin: 20px 0;
+    /* line-height: 125px; */
+    text-transform: uppercase;
+    font-family: incised;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+}
+
+.glow {
+    width: 30%;
+    margin-top: 30px;
+    margin-left: auto;
+}
+
+.glow h4 {
+    width: 65%;
+    margin: 10px auto;
+    font-size: 22px;
+    font-family: montserrat;
+}
+.glow p{
+    width: 65%;
+    margin: 10px auto;
+    font-size: 16px;
+    font-family: montserrat;
+}
+
+.sec_1_img {
+    right: 25%;
+    top: 30px;
+}
+
+.sec_1_img_1 {
+    left: 50px;
+    top: 170px;
+}
+
+.sec_1_img_2 {
+    right: 18%;
+    top: 80px;
+}
+
+.sec_1_img_3 {
+    bottom: 0px;
+    left: 25%;
+}
+.sec_1_img_4{
+    display: block;
+    width:26%;
+    bottom: 130px;
+    right: 27.5%;
+}
