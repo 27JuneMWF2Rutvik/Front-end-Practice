@@ -2,8 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.container{
+
+.container {
     width: 90%;
     margin: auto;
 }
@@ -36,7 +38,6 @@ nav ul li a {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.781);
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .home {
@@ -50,8 +51,28 @@ nav ul li a {
     display: flex;
 }
 
+.align-item {
+    align-items: center;
+}
+
+.justify {
+    align-items: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
 .col_50 {
     width: 50%;
+}
+
+.col-40 {
+    width: 40%;
+}
+
+.col-20 {
+    width: 20%;
 }
 
 .text {
@@ -68,7 +89,6 @@ nav ul li a {
     display: inline-block;
     font-size: 55px;
     color: white;
-    font-family: sans-serif;
     width: 600px;
 }
 
@@ -77,19 +97,19 @@ nav ul li a {
     font-weight: 600;
     color: rgba(255, 255, 255, 0.758);
     border: none;
-    padding: 10px 20px;
+    padding: 20px 20px;
     border-radius: 7px;
     background-color: rgb(236, 147, 84);
 }
 
 /* sec-2 */
 .accelerated-text {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 800px;
-    padding: 0 40px 0px 0px;
+    justify-content: center; */
+    /* height: 800px; */
+    /* padding: 0 40px 0px 0px;  */
 }
 
 .accelerated-text h2 {
@@ -98,7 +118,6 @@ nav ul li a {
     width: 100%;
     padding-bottom: 20px;
     color: rgba(255, 68, 0, 0.549);
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .accelerated-text p {
@@ -106,7 +125,6 @@ nav ul li a {
     font-weight: 700;
     color: rgb(64, 63, 63);
     width: 580px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .accelerated-img {
@@ -139,12 +157,14 @@ nav ul li a {
 }
 
 .sec-3-text {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 800px;
-    padding: 0 0px 0px 40px;
+    height: 800px; */
+    /* padding: 0 0px 0px 40px; */
+    width: 90%;
+    margin-left: auto;
 }
 
 .sec-3-text h2 {
@@ -153,7 +173,6 @@ nav ul li a {
     width: 580px;
     padding-bottom: 20px;
     color: rgba(255, 68, 0, 0.549);
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .sec-3-text p {
@@ -161,7 +180,6 @@ nav ul li a {
     font-weight: 700;
     color: rgb(64, 63, 63);
     width: 580px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .sec-img {
@@ -189,38 +207,41 @@ nav ul li a {
     background: linear-gradient(70deg, rgba(255, 255, 255, 0.516), rgba(161, 157, 157, 0.587)), url("../img/sec4-img.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    text-align: center;
+    height: 600px;
+    display: grid;
+    place-content: center;
 }
 
-.sec4-text{
-    display: flex;
+.sec4-text {
+    /* display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    height: 600px;
+    text-align: center; */
+
 }
 
-.sec4-text h2{
+.sec4-text h2 {
     font-size: 35px;
     padding-bottom: 20px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
-.sec4-text p{
+.sec4-text p {
     font-size: 20px;
     font-weight: 700;
     color: rgb(31, 28, 28);
-    width: 900px;
-    font-family: Arial, Helvetica, sans-serif;
+    width: 70%;
+    margin: auto;
 }
 
-.sec4-text button{
+.sec4-text button {
     font-size: 20px;
     margin-top: 20px;
     font-weight: 600;
     color: rgba(255, 255, 255, 0.758);
     border: none;
-    padding: 10px 20px;
+    padding: 20px 20px;
     border-radius: 7px;
     background-color: rgb(236, 147, 84);
 }
@@ -241,7 +262,6 @@ nav ul li a {
     width: 100%;
     padding-bottom: 20px;
     color: rgba(255, 68, 0, 0.549);
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .seamlessly p {
@@ -249,7 +269,6 @@ nav ul li a {
     font-weight: 700;
     color: rgb(64, 63, 63);
     width: 900px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .slide {
@@ -258,11 +277,130 @@ nav ul li a {
 }
 
 .box {
-    margin: 10px;
+    margin: 60px 0;
     background-color: rgb(28, 74, 75);
 }
 
-.box img{
+.box img {
     width: 350px;
     height: 400px;
+}
+
+/* sec-6 */
+.bg-6 {
+    background-color: rgb(28, 74, 75);
+}
+
+.client-text {
+    text-align: center;
+    padding: 90px 0;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.client-text h2 {
+    font-size: 35px;
+    font-weight: 700;
+    width: 100%;
+    padding-bottom: 20px;
+    color: rgba(255, 68, 0, 0.549);
+}
+
+.client-text>p {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    width: 900px;
+}
+
+.jarret-green {
+    width: 30%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.jarret-green img {
+    width: 110px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.col h3 {
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+    width: 200px;
+}
+
+.col p {
+    color: white;
+    margin-top: 20px;
+}
+
+/* sec-7 */
+.customers p {
+    margin: 20px 0;
+}
+
+/* sec-8 */
+.product-lift {
+    background-image: linear-gradient(rgba(42, 38, 38, 0.365), rgba(51, 49, 49, 0.607)), url("../img/lifting.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+.lift-text {
+    margin: 80px 0;
+    color: white;
+}
+
+.product-lift p {
+    font-size: 20px;
+}
+
+.product-lift h2 {
+    font-size: 40px;
+    padding: 10px 0;
+}
+
+.product-lift button {
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.758);
+    border: none;
+    padding: 20px 20px;
+    border-radius: 7px;
+    background-color: rgb(236, 147, 84);
+}
+
+.footer-content {
+    background-color: rgb(28, 74, 75);
+    /* height: 299px; */
+    color: white;
+}
+
+.product-lift img {
+    width: 30%;
+}
+
+.content {
+    margin: 50px 0;
+}
+
+.content p {
+    font-size: 27px;
+    padding: 20px 0;
+}
+
+.content ul li {
+    list-style: none;
+    padding: 7px 0;
+}
+
+.content ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
 }
