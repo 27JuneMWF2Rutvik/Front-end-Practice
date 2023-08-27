@@ -5,10 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
-  <link rel="stylesheet" href="css/style.css" />
 
-  <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css" />
-  <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css" />
+  <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
+  <link rel="stylesheet" href="css/style.css" />
 
 </head>
 
@@ -16,33 +16,40 @@
   <!-- sec-1  -->
   <section>
     <div class="container">
-      <div class="header">
-        <nav>
+      <div id="header">
+        <nav id="menu">
           <h2>Agile Fulfillment</h2>
-          <ul>
-            <li><a href>About us</a></li>
-            <li><a href>Services</a></li>
-            <li><a href>Industriest</a></li>
-            <li><a href>Resources</a></li>
-            <li><a href>Contact</a></li>
+          <ul id="menu-list">
+            <li><a href="#About">About us</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Industriest">Industriest</a></li>
+            <li><a href="#Resources">Resources</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
+          <div class="toggle" onclick="toggle()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </nav>
       </div>
     </div>
     <div class="home">
-      <div class="text pad">
-        <h2>Store and Ship Your Products seamlessly.</h2><br>
-        <button>Find Out More</button>
+      <div class="container">
+        <div class="text">
+          <h1>Store and Ship Your Products seamlessly.</h1><br>
+          <button class="btn">Find Out More</button>
+        </div>
       </div>
     </div>
 
   </section>
 
   <!-- sec-2  -->
-  <section>
+  <section id="About">
     <div class="container">
       <div class="accelerated">
-        <div class="row align-item">
+        <div class="row align-item row-revers">
           <div class="col_50">
             <div class="accelerated-text justify">
               <h2>See Your Ecommerce Accelerated</h2>
@@ -94,7 +101,7 @@
   </section>
 
   <!-- sec-4 -->
-  <section>
+  <section id="Services">
     <div class="sec4 ">
       <div class="container">
         <div class="sec4-text ">
@@ -104,16 +111,16 @@
             two decades, we've helped hundreds of national and international
             companies grow by
             strengthening the ecommerce experience with every shipment.</p>
-          <button>Find Out More</button>
+          <button class="btn">Find Out More</button>
         </div>
       </div>
     </div>
   </section>
 
   <!-- sec-5 -->
-  <section>
+  <section id="Industriest">
     <div class="container">
-      <div class="seamlessly">
+      <div class="seamlessly ">
         <h2>Seamlessly Connect with Your Ecommerce Platforms</h2>
         <p>Align Fulfilment is your behind-the-scenes partner delivering peace
           of mind. For over
@@ -125,34 +132,34 @@
 
     <div class="slide autoplay">
       <div class="box">
-        <img src="img/id-t-1-logo-.png" alt="">
+        <img src="img/IDT.png" alt="">
       </div>
       <div class="box">
         <img src="img/universidad-img.png" alt="">
       </div>
       <div class="box">
-        <img src="img/id-t-1-logo-.png" alt="">
+        <img src="img/mitrade-img.png" alt="">
       </div>
       <div class="box">
-        <img src="img/id-t-1-logo-.png" alt="">
+        <img src="img/universidad-img.png" alt="">
       </div>
       <div class="box">
-        <img src="img/id-t-1-logo-.png" alt="">
+        <img src="img/IDT.png" alt="">
       </div>
       <div class="box">
-        <img src="img/id-t-1-logo-.png" alt="">
+        <img src="img/mitrade-img.png" alt="">
       </div>
       <div class="box">
-        <img src="img/id-t-1-logo-.png" alt="">
+        <img src="img/universidad-img.png" alt="">
       </div>
       <div class="box">
-        <img src="img/id-t-1-logo-.png" alt="">
+        <img src="img/IDT.png" alt="">
       </div>
     </div>
   </section>
 
   <!-- sec-6 -->
-  <section class="bg-6">
+  <section class="bg-6" id="Resources">
     <div class="client">
       <div class="client-text align-item">
         <h2>Why Our Clients Love Us</h2>
@@ -202,29 +209,29 @@
   <footer>
     <div class="product-lift ">
       <div class="container">
-        <div class="row space-between align-item">
-          <div class="col-50 lift-text">
+        <div class="row lift-text space-between align-item">
+          <div class="col-50">
             <p>Ready for a Fulfillment Solution?</p>
-            <h2>Let us handle the heavy lifting</h2>
+            <h3>Let us handle the heavy lifting</h3>
           </div>
           <div class="col-50">
-            <button>Call Now</button>
-            <button>Get started</button>
+            <button class="btn">Call Now</button>
+            <button class="btn">Get started</button>
           </div>
         </div>
       </div>
-      <!-- <div> -->
+
       <div class="footer footer-content">
         <div class="container">
-          <div class="row">
-            <div class="col-40">
+          <div class="row space-between">
+            <div class="col-40 footer-text">
               <img src="img/logo-removebg-preview.png" alt="">
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum nulla recusandae dolores maiores cum
                 voluptas repellendus dolore, minus aliquid est.</p>
             </div>
             <div class="col-20">
               <div class="content">
-                <p>Explore</p>
+                <h3>Explore</h3>
                 <ul>
                   <li><a href="">About Us</a></li>
                   <li><a href="">Services</a></li>
@@ -235,7 +242,7 @@
             </div>
             <div class="col-20">
               <div class="content">
-                <p>Legal</p>
+                <h3>Legal</h3>
                 <ul>
                   <li><a href="">Terms & Conditions</a></li>
                   <li><a href="">Privacy</a></li>
@@ -245,7 +252,7 @@
             </div>
             <div class="col-20">
               <div class="content">
-                <p>Location</p>
+                <h3>Location</h3>
                 <b>Lorem ipsum is simply<br>dummy text of the</b><br><br>
                 <b>1234 123 12</b><br><br>
                 <b>www.abcd.com</b>
@@ -254,23 +261,75 @@
           </div>
         </div>
       </div>
-      <!-- </div> -->
     </div>
   </footer>
 
 
   <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-  <script src="./slick-1.8.1/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
   <script type="text/javascript">
     $(document).ready(function () {
       $('.autoplay').slick({
         slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
         autoplay: true,
+        arrows: true,
+        dots: true,
         autoplaySpeed: 2000,
+
+        responsive: [
+          {
+            breakpoint: 1400,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 576,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
       });
     });
   </script>
+
+
+  <script>
+    let Toggle = document.getElementById("menu");
+    let header = document.getElementById("header");
+    function toggle() {
+      Toggle.classList.toggle("active");
+      console.log("succes");
+    }
+
+
+    window.onscroll = function () {
+      Toggle.classList.remove("active");
+      if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        // document.getElementById("myP").className = "test";
+        header.classList.add("header");
+      } else {
+        // document.getElementById("myP").className = "";
+        header.classList.remove("header");
+      }
+
+
+    }
+  </script>
+
 </body>
 
 </html>
