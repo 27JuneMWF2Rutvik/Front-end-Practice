@@ -46,6 +46,10 @@ nav h2 {
     }
 }
 
+#menu img {
+    width: 100px;
+}
+
 nav ul {
     display: flex;
 }
@@ -365,7 +369,10 @@ button {
 }
 
 .box img {
-    width: 80%;
+    object-fit: contain;
+    padding: 25px;
+    object-position: center;
+    /* width: 80%; */
     height: 200px;
 
 }
