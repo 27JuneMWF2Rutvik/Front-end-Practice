@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Selector Start */
+        /* 01) UniversalSelector Start */
+        /* *{
+            background-color: blue;
+            color: white;
+        } */
+        /* 01) UniversalSelector End */
+
+        /* 02) Element Selector Start  */
+        /* div{
+            background-color: brown;
+            color: white;
+        } */
+        /* 02) Element Selector End  */
+
+        /* 03) idSelector Start */
+        /* #idselector {
+            background-color: cadetblue;
+            color: white;
+        } */
+        /* 03) idSelector End */
+
+        /* 04) ClassSelector Start */
+        /* .class-selector{
+            background-color: chocolate;
+            color: #fff;
+        } */
+        /* 04) ClassSelector End */
+
+        /* 05) DescendantSelectors Start */
+        /* ul.cust-class a{
+            text-decoration: none;
+            font-size: 30px;
+            color: cadetblue;
+        } */
+        /* 05) DescendantSelectors End */
+
+        /* 06) ChildSelector Start */
+        /* .cust-class>p>a{
+            text-decoration: none;
+            font-size: 30px;
+            color: chocolate;
+        } */
+        /* 06) ChildSelector End */
+
+        /* 07) AdjacentSiblingSelectors Start */
+        /* h1+p{
+            font-size: 30px;
+            font-style: italic;
+            color: cadetblue;
+        } */
+        /* 07) AdjacentSiblingSelectors End */
+
+        /* 08) GeneralSibling Start */
+        /* .text~p {
+            font-size: 14px;
+            font-style: italic;
+        } */
+        /* 08) GeneralSibling End */
+
+        /* 09) GroupingSelector Start  */
+        /* .cust-div,p,label {
+            background-color: teal;
+            color: white;
+        } */
+        /* 09) GroupingSelector End  */
+
+
+        /* 01) Attribute selector Start */
+        /* input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+        } */
+        /* 1) Attribute selector End */
+
+        /* 2) Pseudo-Classes Start */
+        /* a:visited {
+            color: rgb(12, 213, 227);
+        }
+        
+        a:link {
+            color: rgb(2, 124, 39);
+        }
+
+        a:focus {
+            color: rgb(2, 2, 124);
+            outline: 1px solid rgb(199, 4, 199);
+        }
+        
+        a:hover {
+            font-size: 18px;
+        }
+        
+        .p-cust::first-letter {
+            font-size: 36px;
+        }
+        
+        .p-cust::first-line {
+            color: firebrick;
+        }
+
+        .p-cust::selection {
+            background-color: orangered;
+            color: white;
+        }
+
+        button:disabled {
+            background-color: rgb(50, 205, 190);
+        }
+
+        input:checked {
+            outline: 2px solid red;
+        }
+
+        input:required {
+            outline: 2px solid rgb(238, 143, 11);
+        }
+
+        input:valid {
+            outline: 2px solid green;
+        }
+
+        input:invalid {
+            outline: 2px solid rgb(90, 7, 5);
+        } */
+        /* 02) Pseudo-Classes End */
+
+        /* 03 pseudo-before Start */
+        /* h1::before{
+            content: "~";
+        }
+        h1::after{
+            content: "~";
+        } */
+        /* 03 pseudo-before End */
+
+        /* Selector End */
+
+        /* CSS Priority Start */
+        /* h2 {
+                background-color: red;
+            } */
+        /* CSS Priority End */
+    </style>
+    <!-- CSS Priority External link Start -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <!-- CSS Priority External link End -->
+</head>
+
+<body>
+    <!-- What is CSS? -->
+    <!-- => CSS stands for Cascading Style Sheets
+        => It is a style sheet language which is used to describe the look and
+    formatting of a document written in markup language. It provides an additional feature to HTML. It is generally used
+    with HTML to change the style of web pages and user interfaces. It can also be used with any kind of XML documents
+    including plain XML, SVG and XUL.
+    => CSS is used along with HTML and JavaScript in most websites to create user interfaces for web applications and user
+    interfaces for many mobile applications. -->
+
+    <!-- CSS Priority start-->
+    <!-- <h2 style="background-color: yellow;color: slateblue;">InlineCSS</h2>
+        <h2>Data</h2> -->
+    <!-- CSS Priority End-->
+
+    <!-- Selector Start : -->
+    <!-- 01) UniversalSelector Start : -->
+    <!-- <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque eligendi
+        repellendus laudantium voluptates nihil nemo velit veritatis quaerat
+        delectus perspiciatis?</h2>
+
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem,
+        earum?</div> -->
+    <!-- 01) UniversalSelector End : -->
+
+    <!-- 02ElementSelector Start  -->
+    <!-- <h1>Lorem ipsum dolor.</h1>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit,
+        minus.</div>
+    <label for="">Element</label>
+    <div>Lorem ipsum dolor sit amet.</div> -->
+    <!-- 02ElementSelector End -->
+
+    <!-- 03) idSelector Start -->
+    <!-- <div>Test</div>
+    <div>Test</div>
+    <div id="idselector">Test</div>
+    <div>Test</div> -->
+    <!-- 03) idSelector End -->
+
+    <!-- 04) ClassSelector Start -->
+    <!-- <div>Test</div>
+    <div>Test</div>
+    <div class="class-selector">Test</div>
+    <div>Test</div>
+    <div class="class-selector">Test</div>
+    <div>Test</div>
+    <div class="class-selector">Test</div>
+    <div class="class-selector">Test</div>
+    <div class="class-selector">Test</div> -->
+    <!-- 04) ClassSelector End -->
+
+    <!-- 05) DescendantSelectors Start -->
+    <!-- <ul>
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+    </ul>
+    <ul class="cust-class">
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+    </ul>
+    <ul>
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+    </ul>
+    <div class="cust-class">
+        <p>something <a href="#">anchor</a> </p>
+    </div> -->
+    <!-- 05) DescendantSelectors End -->
+
+    <!-- 06) ChildSelector Start -->
+    <!-- <ul>
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+    </ul>
+    <ul class="cust-class">
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+    </ul>
+    <ul>
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+    </ul>
+    <div class="cust-class">
+        <p>something <a href="#">anchor</a> </p>
+    </div>
+    <div class="cust-class">
+        <a href="#">Something</a>
+    </div> -->
+    <!-- 06) ChildSelector End -->
+
+    <!-- 07) AdjacentSiblingSelectors Start -->
+    <!-- <h1>Bank Of Baroda</h1>
+    <p>baat krnese baat banti hai</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque velit labore similique laboriosam, ducimus natus
+        sunt accusamus quas aut aliquam officiis numquam quia nam sequi praesentium nobis porro incidunt rem?</p>
+    <div> div Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam consectetur natus repellat culpa earum
+        sapiente? Cum, iste fugit? Officiis fuga at eaque unde, consequatur ullam dignissimos nam laudantium natus
+        maiores. </div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem nostrum, voluptatem id maiores voluptatum ducimus
+        itaque aut tenetur, eius non voluptatibus est hic, fugiat natus ipsum. Incidunt consequatur nam laudantium.</p> -->
+    <!-- 07) AdjacentSiblingSelectors End -->
+
+    <!-- 08) GeneralSibling Start -->
+    <!-- <h1>Bank Of Baroda</h1>
+    <p>baat krnese baat banti hai</p>
+    <h2 class="text">Text</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque velit labore similique laboriosam, ducimus
+            natus
+            sunt accusamus quas aut aliquam officiis numquam quia nam sequi praesentium nobis porro incidunt rem?</p>
+    <div> div Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam consectetur natus repellat culpa earum
+        sapiente? Cum, iste fugit? Officiis fuga at eaque unde, consequatur ullam dignissimos nam laudantium natus
+        maiores. </div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem nostrum, voluptatem id maiores voluptatum ducimus
+        itaque aut tenetur, eius non voluptatibus est hic, fugiat natus ipsum. Incidunt consequatur nam laudantium.</p> -->
+    <!-- 08) GeneralSibling End -->
+
+    <!-- 09) GroupingSelector Start -->
+    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum cupiditate delectus doloribus debitis, rem quaerat
+        maiores? Id, delectus! Rerum sequi quis facere ab tenetur libero, natus fugiat corrupti dicta rem!</p>
+    <label for="">Test</label>
+    <div>checking</div>
+    <div class="cust-div">checking</div> -->
+    <!-- 09) GroupingSelector End -->
+
+    <!-- AttributeSelector Start -->
+    <!-- 01) Attribute selector Start -->
+    <!-- <input type="text" name="" id="">
+    <input type="password" name="" id="">
+    <input type="email" name="" id="">
+    <input type="radio" name="" id=""> Male
+    <input type="radio" name="" id=""> Female -->
+    <!-- 01) Attribute selector End -->
+
+    <!-- 02) Pseudo-Classes Start -->
+    <!-- <a href="https://www.google.com">Google</a>
+    <a href="https://www.other.com">other</a>
+    <input type="text" name="" id="">
+    <p class="p-cust">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis harum neque, alias optio atque
+        sequi quis similique quod? Nihil, modi a ea quae aliquid distinctio excepturi! Ipsam cum deleniti iusto. Lorem
+        ipsum dolor, sit amet consectetur adipisicing elit. Sed iusto dolores dignissimos quaerat commodi quod quia non,
+        maiores deserunt vel magnam culpa qui eligendi ullam ex! Ad non iste cumque.</p>
+    <button>Click me normal</button>
+    <button disabled>Click me disabled</button>
+    <form method="post">
+        <input type="checkbox" name="" id="">
+        <input type="email" name="" id="" required>
+        <input type="submit">
+    </form> -->
+    <!-- 02) Pseudo-Classes End -->
+
+    <!-- 03 pseudo-before Start -->
+    <!-- <h1>Test</h1> -->
+    <!-- 03 pseudo-before End -->
+
+    <!-- AttributeSelector End -->
+
+    <!-- Selector End -->
+
+    <!-- BG Start -->
+    <ul>
+        <li>background-color</li>
+        <li>background-image</li>
+        <li>background-attachment</li>
+        <li>background-clip</li>
+        <li>background-origin</li>
+        <li>background-position</li>
+        <li>background-repeat</li>
+        <li>background-size</li>
+    </ul>
+
+    <div class="background-color">background-color</div>
+    <div class="background-image">background-image</div>
+    <div class="background-attachment">background-attachment</div>
+    <div class="background-clip">background-clip</div>
+    <div class="background-origin">background-origin</div>
+    <div class="background-position">background-position</div>
+    <div class="background-repeat">background-repeat</div>
+    <div class="background-size">background-size</div>
+    <div class="background-shorthand">background-shorthand</div>
+    <!-- BG End -->
+
+</body>
+
+</html>
