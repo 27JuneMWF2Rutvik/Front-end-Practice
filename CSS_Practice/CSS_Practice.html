@@ -194,7 +194,7 @@
             border: 15px dotted orangered;
             font-size: 30px;
             color: white;
-            background-position: center;
+            background-position: center center;
         }
 
         .background-repeat {
@@ -208,22 +208,265 @@
         }
 
         .background-size {
-            background-image: url(../images/img10.jpeg);
+            background-image: url("https://images.unsplash.com/photo-1682687981630-cefe9cd73072?auto=format&fit=crop&q=80&w=1471&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
             border: 15px dotted orangered;
             padding: 50px;
             background-repeat: no-repeat;
             background-position: center;
-            /* background-size:contain ; */
+            /* background-size:contain; */
             background-size: cover;
         }
 
         .background-shorthand {
-            background: url(../images/img10.jpeg)no-repeat center center /cover;
+            background: url("https://images.unsplash.com/photo-1550016681-60a1d9d23bf7?auto=format&fit=crop&q=80&w=1463&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")no-repeat center center /cover;
             border: 15px dotted orangered;
             padding: 50px;
+            font-size: 30px;
+            color: white;
         }
 
+        /* Gradient Start */
+        h1 {
+            background: linear-gradient(17deg, #e66464, #8a92eb);
+            padding: 50px 0;
+        }
+
+        /* Gradient End */
+
         /* BG Start */
+
+        /* Fonts Start */
+        * {
+            /* font-family: sans-serif; */
+            /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+        }
+
+        @font-face {
+            font-family: 'Caveat';
+            src: url(Fonts/Caveat-VariableFont_wght.ttf);
+        }
+
+        .pt-50 {
+            font-size: 50pt;
+        }
+
+        /* Important sizing START */
+        .px-50 {
+            font-size: 32px;
+        }
+
+        .em-2 {
+            font-size: 2em;
+        }
+
+        .rem-2 {
+            font-size: 2rem;
+        }
+
+        .font-vh {
+            font-size: 20vh;
+        }
+
+        /* Important sizing END */
+
+        .font-sm {
+            font-size: small;
+        }
+
+        .font-prc {
+            font-size: 100%;
+        }
+
+        .font-in {
+            font-size: 5in;
+        }
+
+        .font-stretch {
+            font-stretch: ultra-expanded;
+        }
+
+        .font-weight {
+            font-weight: 600;
+        }
+
+        .font-variant {
+            font-variant: small-caps;
+        }
+
+        .line-height {
+            line-height: 100px
+        }
+
+        .cust-font-Caveat {
+            font-family: 'Caveat';
+            color: #8a92eb;
+            font-size: 50px;
+        }
+
+        /* Fonts End */
+
+        /* Text Start */
+        .crl {
+            color: brown;
+        }
+
+        p {
+            width: 200px;
+        }
+
+        .txt-left {
+            text-align: left;
+        }
+
+        .txt-center {
+            text-align: center;
+        }
+
+        .txt-right {
+            text-align: right;
+        }
+
+        .txt-justify {
+            text-align: justify;
+        }
+
+        .txt-decor-under {
+            text-decoration: underline;
+        }
+
+        .txt-decor-over {
+            text-decoration: overline;
+        }
+
+        .txt-decor-srt {
+            text-decoration: line-through;
+        }
+
+        .txt-trans-capi {
+            text-transform: capitalize;
+        }
+
+        .txt-trans-upper {
+            text-transform: uppercase;
+        }
+
+        .txt-trans-lower {
+            text-transform: lowercase;
+        }
+
+        .txt-trans-none {
+            text-transform: none;
+        }
+
+        .txt-indent {
+            text-indent: 80px;
+        }
+
+        .txt-letter-space {
+            width: 100%;
+            letter-spacing: 5px;
+        }
+
+        .txt-word-space {
+            width: 100%;
+            word-spacing: 10px;
+
+        }
+
+        .txt-sd {
+            text-shadow: 4px 2px 2px rgb(25 187 0 / 124%);
+        }
+
+        /* Text End */
+
+        /* BorderVsOutline Start */
+        .border-outline {
+            border: 20px dashed grey;
+            outline: 20px dotted orangered;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        a {
+            border-left: 2px solid goldenrod;
+        }
+
+        a:hover {
+            /* border: 5px solid green; */
+            outline: 5px solid green;
+        }
+
+        .box {
+            display: inline-block;
+            /* height: 200px;
+            width: 300px;
+            border-top: 50px;
+            border-left: 0px;
+            border-right: 0px;
+            border-style: double;
+            border-bottom: 50px; */
+            border: 20px solid rgb(70, 0, 0);
+            /* border-radius: 20px; */
+            /* border-radius: 50%; */
+            border-radius: 20px 10px 20px 50px;
+        }
+
+        .box1 {
+            width: 200px;
+            display: inline-block;
+            border: 20px solid rgb(70, 0, 0);
+            border-radius: 50px 0px 50px 0px;
+            transition: all .5s;
+        }
+
+        .box1:hover {
+            border-radius: 5px;
+        }
+
+        /* Border Style Start */
+        /* .border-{ border-style: none;}
+       .border-{ border-style: hidden;} */
+        div {
+            margin: 20px;
+            /* height: 60px; */
+            border-width: 30px;
+            border-color: brown;
+        }
+
+        .border-dotted {
+            border-style: dotted;
+        }
+
+        .border-dashed {
+            border-style: dashed;
+        }
+
+        .border-solid {
+            border-style: solid;
+        }
+
+        .border-double {
+            border-style: double;
+        }
+
+        .border-groove {
+            border-style: groove;
+        }
+
+        .border-ridge {
+            border-style: ridge;
+        }
+
+        .border-inset {
+            border-style: inset;
+        }
+
+        .border-outset {
+            border-style: outset;
+        }
+        /* Border Style End */
+
+        /* BorderVsOutline End */
     </style>
     <!-- CSS Priority External link Start -->
     <!-- <link rel="stylesheet" href="style.css"> -->
@@ -422,7 +665,123 @@
     <div class="background-repeat">background-repeat</div>
     <div class="background-size">background-size</div>
     <div class="background-shorthand">background-shorthand</div>
+
+    <!-- Gradient Start -->
+    <h1>Gradient</h1>
+    <!-- Gradient End -->
+
     <!-- BG End -->
+
+    <!-- Fonts Start -->
+    <ul>
+        <li> font-family</li>
+        <li> font-size</li>
+        <li> font-stretch</li>
+        <li> font-style</li>
+        <li> font-variant</li>
+        <li> font-weight</li>
+        <li> line-height</li>
+        <li> ExternalFonts</li>
+
+    </ul>
+    <p>font-size : <span class="px-50">50px font</span></p>
+    <p>font-size : <span class="pt-50">50pt font</span></p>
+    <p>font-size : <span class="em-2">2em font</span></p>
+    <p>font-size : <span class="rem-2">2rem font</span></p>
+    <p>font-size : <span class="font-sm">font-sm</span></p>
+    <p>font-size : <span class="font-prc">font-%</span></p>
+    <p>font-size : <span class="font-vh">font-vh</span></p>
+    <p>font-size : <span class="font-in">font-in</span></p>
+    <p>font-stretch: <span class="font-stretch">font-stretch</span></p>
+    <p>font-variant : <span class="font-variant">font-variant</span></p>
+    <p>font-weight : <span class="font-weight">font-weight</span></p>
+    <p>line-height : <span class="line-height">line-height</span></p>
+    <p>line-height : <span class="line-height"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum velit
+            ipsa nobis minus eaque excepturi! Dolore ea dolores commodi et sapiente eum ullam ut magni, eligendi fugit?
+            Quibusdam, id explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum minima enim
+            blanditiis quo hic corrupti incidunt nam praesentium. Impedit, quibusdam voluptatem? Et tempora, eum
+            voluptatibus libero rerum doloremque totam vel!</span></p>
+    <span class="cust-font-Caveat">cust-font-Caveat</span>
+    <!-- Fonts End -->
+
+    <!-- Text Start -->
+    <ul>
+        <li> Text Color</li>
+        <li> Text Alignment</li>
+        <li> Text Decoration</li>
+        <li> Removing the Default Underline from Links</li>
+        <li> Text Transformation</li>
+        <li> Text Indentation</li>
+        <li> Letter Spacing</li>
+        <li> Word Spacing</li>
+    </ul>
+    <p class="crl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellat nulla commodi fugiat possimus
+        laboriosam. Quisquam suscipit corporis minima fugit eligendi nostrum. Itaque inventore ex numquam vel hic
+        sapiente ducimus.</p>
+    <p class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellat nulla commodi fugiat possimus
+        laboriosam. Quisquam suscipit corporis minima fugit eligendi nostrum. Itaque inventore ex numquam vel hic
+        sapiente ducimus.</p>
+    <p class="txt-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellat nulla commodi fugiat
+        possimus laboriosam. Quisquam suscipit corporis minima fugit eligendi nostrum. Itaque inventore ex numquam vel
+        hic sapiente ducimus.</p>
+    <p class="txt-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellat nulla commodi fugiat
+        possimus laboriosam. Quisquam suscipit corporis minima fugit eligendi nostrum. Itaque inventore ex numquam vel
+        hic sapiente ducimus.</p>
+    <p class="txt-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellat nulla commodi fugiat
+        possimus laboriosam. Quisquam suscipit corporis minima fugit eligendi nostrum. Itaque inventore ex numquam vel
+        hic sapiente ducimus.</p>
+    <p class="txt-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellat nulla commodi fugiat
+        possimus laboriosam. Quisquam suscipit corporis minima fugit eligendi nostrum. Itaque inventore ex numquam vel
+        hic sapiente ducimus.</p>
+    <p class="txt-decor-under">Text Decoration underline</p>
+    <p class="txt-decor-over">Text Decoration overline</p>
+    <p class="txt-decor-srt">Text Decoration line-through</p>
+    <h3>Txt Transformation</h3>
+    <p class="txt-trans-capi">Text DecoRATion Transformation</p>
+    <p class="txt-trans-lower">Text DecoRATion Transformation</p>
+    <p class="txt-trans-upper">Text DecoRATion Transformation</p>
+    <p class="txt-trans-none">Text DecoRATion Transformation</p>
+    <p class="txt-indent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam neque, eaque aliquam magni
+        amet officia enim modi, ipsum iste quas temporibus laborum dicta dolore cumque repellendus harum id et. Nihil.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, ab sit. Explicabo, sed iure rerum sint ad nihil
+        molestiae iusto adipisci quas possimus, delectus consequuntur voluptates. Nihil, odio ducimus. Autem.</p>
+    <p class="txt-word-space">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam neque, eaque aliquam
+        magni amet officia enim modi, ipsum iste quas temporibus laborum dicta dolore cumque repellendus harum id et.
+        Nihil. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, ab sit. Explicabo, sed iure rerum sint
+        ad nihil molestiae iusto adipisci quas possimus, delectus consequuntur voluptates. Nihil, odio ducimus. Autem.
+    </p>
+    <p class="txt-letter-space">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam neque, eaque aliquam
+        magni amet officia enim modi, ipsum iste quas temporibus laborum dicta dolore cumque repellendus harum id et.
+        Nihil. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, ab sit. Explicabo, sed iure rerum sint
+        ad nihil molestiae iusto adipisci quas possimus, delectus consequuntur voluptates. Nihil, odio ducimus. Autem.
+    </p>
+    <p class="txt-sd"> shadow</p>
+    <!-- Text End -->
+
+    <!-- BorderVsOutline Start -->
+    before div
+    <div class="border-outline">
+        border-outline
+    </div>
+    after div
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+    <div class="box"></div>
+    <div class="box1"></div>
+
+    <!-- Borderutline Start -->
+    <div class="border-dotted">border-dotted</div>
+    <div class="border-dashed">border-dashed</div>
+    <div class="border-solid">border-solid</div>
+    <div class="border-double">border-double</div>
+    <div class="border-groove">border-groove</div>
+    <div class="border-ridge">border-ridge</div>
+    <div class="border-inset">border-inset</div>
+    <div class="border-outset">border-outset</div>
+    <!-- Borderutline End -->
+
+    <!-- BorderVsOutline End -->
 
 </body>
 
