@@ -1517,7 +1517,7 @@
 /* Animation End */
 
 /* MediaQuery Start */
-/* * {
+* {
     box-sizing: border-box;
     border: 1px solid;
 }
@@ -1578,7 +1578,7 @@
     .col-25 {
         width: 25%;
     }
-} */
+}
 
 /* MediaQuery Example Start */
 /* * {
