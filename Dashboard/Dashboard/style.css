@@ -102,6 +102,19 @@ small {
   font-size: 0.75rem;
 }
 
+
+.logout-button {
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  padding: 5px 10px;
+}
+
+.logout-button[disabled] {
+  color: var(--color-info-dark);
+}
+
+
 .profile-photo {
   width: 2.8rem;
   height: 2.8rem;
@@ -110,7 +123,7 @@ small {
 }
 
 .text-muted {
-  color: var(--color-info-dark);
+  color: var(--color-info-dark)!important;
 }
 
 p {
@@ -153,7 +166,8 @@ aside .top {
 
 aside .logo {
   display: flex;
-  gap: 0.1rem;
+  gap: 1rem;
+  align-items: center;
 }
 
 aside .logo img {
@@ -181,6 +195,7 @@ aside h3 {
 
 aside .sidebar a {
   display: flex;
+  text-decoration: none;
   color: var(--color-info-dark);
   margin-left: 2rem;
   gap: 1rem;
@@ -540,6 +555,16 @@ main .recent-order a {
 .right .sales-analytics .add-product:hover {
   background: var(--color-success);
 }
+
+
+/* Customer  */
+.customer {
+  display: flex;
+  /* position: fixed;  */
+  margin-top: 1.4rem;
+}
+
+
 
 @media screen and (max-width: 1200px) {
   .container {
