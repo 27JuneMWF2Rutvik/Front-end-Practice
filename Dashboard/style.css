@@ -265,8 +265,14 @@ main .date {
 }
 
 main .date input[type="date"] {
-  color: var(--color-dark);
+  cursor: pointer;
+  color: var(--color-dark); 
   background: transparent;
+}
+
+::-webkit-calendar-picker-indicator {
+  opacity: 9;
+  filter: invert(0.6);
 }
 
 main .insights {
