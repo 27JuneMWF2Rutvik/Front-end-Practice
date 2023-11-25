@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- ------------- section-1--------------- -->
+    <section>
+      <div class="container">
+        <div class="header">
+          <div class="logo">
+            <img src="img/logo.png" alt="" />
+          </div>
+          <div class="menu">
+          <nav>
+            <ul>
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">ABOUT US</a></li>
+              <li><a href="#">COMMERCIAL</a></li>
+              <li><a href="#">RESIDENTIAL</a></li>
+              <li><a href="#">DEVELOPER</a></li>
+              <li><a href="#">ARCHITECTURE</a></li>
+              <li><a href="#">INVESTMENT</a></li>
+            </ul>
+          </nav>
+          </div>
+          <div class="btn">
+            <button>CONTACT US</button>
+            <i onclick="toggleMenu()" class="fa-solid fa-bars"></i>
+          </div>
+          <!-- <div class="icon" ></div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------- section-2--------------- -->
+    <section>
+      <div class="banner">
+        <div class="container">
+          <div class="perfect_way">
+            <p>Find The Perfect Way To</p>
+            <h1>Live With Your Family</h1>
+            <img class="cloud1" src="img/cloud1.png" alt="" />
+            <img class="sun" src="img/sun.png" alt="" />
+            <img class="cloud2" src="img/cloud1.png" alt="" />
+          </div>
+          <div class="search_bar">
+            <div class="search">
+              <img src="img/search-icon.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      function toggleMenu() {
+        $(".menu").toggleClass("disp-b-mobile");
+      }
+    </script>
+  </body>
+</html>

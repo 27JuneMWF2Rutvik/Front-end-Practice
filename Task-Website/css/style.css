@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* ----------------- section-1 ---------------- */
+.container {
+  /* width: 1350px; */
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.menu{
+  margin-right: auto;
+}
+
+.disp-b-mobile {
+  display: block;
+  position: absolute;
+  background-color: #00365c;
+  right: 0;
+}
+
+nav li {
+  display: block;
+}
+
+.logo img {
+  width: 200px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+  padding: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.643);
+  transition: all 0.4s;
+}
+
+nav ul li a:hover {
+  color: #00365c;
+}
+
+.btn button {
+  width: 100px;
+  font-size: 12px;
+  height: 50px;
+  border-radius: 30px;
+  background: #00365c;
+  color: #fff;
+  border: none;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.btn button:hover {
+  background: #fff;
+  color: #00365c;
+  font-weight: 700;
+  border: 2px solid #00365c;
+}
+
+/* ----------------- section-2 ---------------- */
+.banner {
+  position: relative;
+  background-color: #00365c;
+  background-size: cover;
+}
+
+.banner .perfect_way {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.772);
+}
+.banner .perfect_way p {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.banner .perfect_way h1 {
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.banner .perfect_way .cloud1 {
+  position: absolute;
+  top: -52px;
+  left: 40px;
+}
+
+.banner .perfect_way .sun {
+  position: absolute;
+  top: -10px;
+  right: 250px;
+}
+
+.banner .perfect_way .cloud2 {
+  position: absolute;
+  top: -52px;
+  right: 10px;
+}
+nav ul li {
+  display: none;
+}
+
+.btn button {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  nav ul li {
+    display: none;
+  }
+
+  .btn button {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  nav ul li {
+    display: block;
+  }
+
+  .btn button {
+    display: block;
+  }
+
+  .btn i {
+    display: none;
+  }
+}
