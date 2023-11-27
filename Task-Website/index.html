@@ -1,75 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    />
-  </head>
-  <body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+
+
+</head>
+
+<body>
     <!-- ------------- section-1--------------- -->
-    <section>
-      <div class="container">
-        <div class="header">
-          <div class="logo">
-            <img src="img/logo.png" alt="" />
-          </div>
-          <div class="menu">
-          <nav>
-            <ul>
-              <li><a href="#">HOME</a></li>
-              <li><a href="#">ABOUT US</a></li>
-              <li><a href="#">COMMERCIAL</a></li>
-              <li><a href="#">RESIDENTIAL</a></li>
-              <li><a href="#">DEVELOPER</a></li>
-              <li><a href="#">ARCHITECTURE</a></li>
-              <li><a href="#">INVESTMENT</a></li>
-            </ul>
-          </nav>
-          </div>
-          <div class="btn">
-            <button>CONTACT US</button>
-            <i onclick="toggleMenu()" class="fa-solid fa-bars"></i>
-          </div>
-          <!-- <div class="icon" ></div> -->
-        </div>
-      </div>
-    </section>
-
-    <!-- ------------- section-2--------------- -->
-    <section>
-      <div class="banner">
-        <div class="container">
-          <div class="perfect_way">
-            <p>Find The Perfect Way To</p>
-            <h1>Live With Your Family</h1>
-            <img class="cloud1" src="img/cloud1.png" alt="" />
-            <img class="sun" src="img/sun.png" alt="" />
-            <img class="cloud2" src="img/cloud1.png" alt="" />
-          </div>
-          <div class="search_bar">
-            <div class="search">
-              <img src="img/search-icon.png" alt="" />
+    <main>
+        <section>
+            <div class="container">
+                <div class="header">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="" />
+                    </div>
+                    <nav id="menu">
+                        <ul>
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#">ABOUT US</a></li>
+                            <li><a href="#">COMMERCIAL</a></li>
+                            <li><a href="#">RESIDENTIAL</a></li>
+                            <li><a href="#">DEVELOPER</a></li>
+                            <li><a href="#">ARCHITECTURE</a></li>
+                            <li><a href="#">INVESTMENT</a></li>
+                            <li><button>CONTACT US</button></li>
+                        </ul>
+                    </nav>
+                    <div class="btn">
+                        <button>CONTACT US</button>
+                        <i onclick="menubar()" class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.js"
-      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-      crossorigin="anonymous"
-    ></script>
+        <!-- ------------- section-2--------------- -->
+        <section>
+            <div class="container">
+                <div class="banner">
+                    <div class="perfect_way">
+                        <p>Find The Perfect Way To</p>
+                        <h1>Live With Your Family</h1>
+                        <img class="cloud1" src="img/cloud1.png" alt="" />
+                        <img class="sun" src="img/sun.png" alt="" />
+                        <img class="cloud2" src="img/cloud1.png" alt="" />
+                    </div>
+                    <div class="search_bar">
+                        <form action="">
+                            <span class="search">
+                                <img src="img/search-icon.png" alt="" />
+                                <input type="text" placeholder="Ahmedabad">
+                            </span>
+                            <div class="looking">
+                                <input type="text" placeholder="What Are You Looking ?">
+                            </div>
+                            <div class="select">
+                                <select name="" id="">
+                                    <option value="">select Type</option>
+                                    <option value="">Weekend Home</option>
+                                    <option value="">Shop / Office</option>
+                                    <option value="">Residential Plots</option>
+                                    <option value="">Industrial Shade</option>
+                                    <option value="">Industrial Plot</option>
+                                    <option value="">Industrial Land</option>
+                                    <option value="">Industrial Land</option>
+                                    <option value="">Industrial Land</option>
+                                </select>
+                            </div>
+
+                            <div class="select">
+                                <select name="" id="">
+                                    <option value="">Min</option>
+                                    <option value="">₹ 30 L</option>
+                                    <option value="">₹ 35 L</option>
+                                    <option value="">₹ 40 L</option>
+                                    <option value="">₹ 45 L</option>
+                                    <option value="">₹ 50 L</option>
+                                    <option value="">₹ 55 L</option>
+                                    <option value="">₹ 60 L</option>
+                                    <option value="">₹ 65 L</option>
+                                </select>
+                            </div>
+
+                            <div class="select">
+                                <select name="" id="">
+                                    <option value="">Max</option>
+                                    <option value="">₹ 30 L</option>
+                                    <option value="">₹ 35 L</option>
+                                    <option value="">₹ 40 L</option>
+                                    <option value="">₹ 45 L</option>
+                                    <option value="">₹ 50 L</option>
+                                    <option value="">₹ 55 L</option>
+                                    <option value="">₹ 60 L</option>
+                                    <option value="">₹ 65 L</option>
+                                </select>
+                            </div>
+
+                            <div class="select">
+                                <select name="" id="">
+                                    <option value="">BHK</option>
+                                    <option value="">1 BHK</option>
+                                    <option value="">2 BHK</option>
+                                    <option value="">3 BHK</option>
+                                    <option value="">4 BHK</option>
+                                    <option value="">5 BHK</option>
+                                    <option value="">6 BHK</option>
+                                    <option value="">7 BHK</option>
+                                    <option value="">8 BHK</option>
+                                </select>
+                            </div>
+
+                            <div class="btn2">
+                                <button>Search</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="home-img">
+                        <img src="img/home-bg.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ------------- section-3 --------------- -->
+        <section class="bg-color">
+            <div class="container">
+                <div class="insight">
+                    <h2>Insight<span> TLJ Property</span></h2>
+                    <div class="boxes">
+                        <div class="box">
+                            <img src="img/sec2-img1.png" alt="">
+                            <p>Property Dealer</p>
+                        </div>
+                        <div class="box">
+                            <img src="img/sec2-img2.png" alt="">
+                            <p>Barter Services</p>
+                        </div>
+                        <div class="box">
+                            <img src="img/sec2-img3.png" alt="">
+                            <p>Tulja Interior</p>
+                        </div>
+                        <div class="box">
+                            <img src="img/sec2-img4.png" alt="">
+                            <p>PG Services</p>
+                        </div>
+                        <div class="box">
+                            <img src="img/sec2-img5.png" alt="">
+                            <p>Finance Services</p>
+                        </div>
+                        <div class="box">
+                            <img src="img/sec2-img6.png" alt="">
+                            <p>Legal Services</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ------------- section-4 --------------- -->
+        <section>
+            <div class="container">
+                <div class="trending">
+                    <h2>Trending <span>Properties</span></h2>
+                    <div class="vertical-center-4 slider">
+                        <div>
+                            <div class="clippath">Hot Spots</div>
+                            <img src="img/slide1.jpg">
+                            <div class="texes">
+                                <div class="text">
+                                    <h2>Simandhar Avenue</h2>
+                                    <a href="">Bhadaj Ahmedabad</a>
+                                </div>
+                                <div class="rate">
+                                    <p>₹ 12 L</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="clippath">Hot Spots</div>
+                            <img src="img/slide2.webp">
+                            <div class="texes">
+                                <div class="text">
+                                    <h2>Tulsi Heights</h2>
+                                    <a href="">Vatva Ahmedabad</a>
+                                </div>
+                                <div class="rate">
+                                    <p>₹ 30 L</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="clippath">Hot Spots</div>
+                            <img src="img/slide3.jfif">
+                            <div class="texes">
+                                <div class="text">
+                                    <h2>Sattva Aranyam Weekend Home</h2>
+                                    <a href="">Hathijan Ahmedabad</a>
+                                </div>
+                                <div class="rate">
+                                    <p>₹ 40 L</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="clippath">Hot Spots</div>
+                            <img src="img/slide4.jpeg">
+                            <div class="texes">
+                                <div class="text">
+                                    <h2>Sattva Industrial Sheds</h2>
+                                    <a href="">Aslali Ahmedabad</a>
+                                </div>
+                                <div class="rate">
+                                    <p>₹ 42 L</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="clippath">Hot Spots</div>
+                            <img src="img/slide5.jpg">
+                            <div class="texes">
+                                <div class="text">
+                                    <h2>Nalanda Icon</h2>
+                                    <a href="">Makarba Ahmedabad</a>
+                                </div>
+                                <div class="rate">
+                                    <p>₹ 22 L</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
 
     <script>
-      function toggleMenu() {
-        $(".menu").toggleClass("disp-b-mobile");
-      }
+        function menubar() {
+            var a = document.getElementById("menu");
+            a.classList.toggle("active")
+            console.log(a);
+        }
     </script>
-  </body>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.slider').slick({
+                // setting- name: setting - value
+                dots: false,
+                infinite: true,
+                speed: 500,
+                fade: true,
+                cssEase: 'linear'
+            });
+        });
+    </script>
+</body>
+
 </html>

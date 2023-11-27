@@ -1,148 +1,534 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
 }
 
 /* ----------------- section-1 ---------------- */
+main {
+    overflow-x: hidden;
+}
+
 .container {
-  /* width: 1350px; */
-  margin: auto;
+    width: 1350px;
+    margin: auto;
+
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 30px 0;
-}
-
-.menu{
-  margin-right: auto;
-}
-
-.disp-b-mobile {
-  display: block;
-  position: absolute;
-  background-color: #00365c;
-  right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
 }
 
 nav li {
-  display: block;
+    display: block;
 }
 
 .logo img {
-  width: 200px;
+    width: 200px;
 }
 
 nav ul {
-  display: flex;
+    display: flex;
 }
 
 nav ul li {
-  list-style: none;
-  padding: 0 10px;
+    list-style: none;
+    padding: 0 10px;
 }
 
-nav ul li a {
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 600;
-  color: rgba(0, 0, 0, 0.643);
-  transition: all 0.4s;
-}
-
-nav ul li a:hover {
-  color: #00365c;
+nav ul li {
+    display: block;
 }
 
 .btn button {
-  width: 100px;
-  font-size: 12px;
-  height: 50px;
-  border-radius: 30px;
-  background: #00365c;
-  color: #fff;
-  border: none;
-  transition: all 0.4s;
-  cursor: pointer;
+    display: block;
+}
+
+.btn i {
+    display: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.643);
+    transition: all 0.4s;
+}
+
+nav ul li a:hover {
+    color: #00365c;
+}
+
+nav li button {
+    display: none;
+}
+
+.btn button {
+    width: 100px;
+    font-size: 12px;
+    height: 50px;
+    border-radius: 30px;
+    background: #00365c;
+    color: #fff;
+    border: none;
+    transition: all 0.4s;
+    cursor: pointer;
 }
 
 .btn button:hover {
-  background: #fff;
-  color: #00365c;
-  font-weight: 700;
-  border: 2px solid #00365c;
+    background: #fff;
+    color: #00365c;
+    font-weight: 700;
+    border: 2px solid #00365c;
 }
 
 /* ----------------- section-2 ---------------- */
 .banner {
-  position: relative;
-  background-color: #00365c;
-  background-size: cover;
+    position: relative;
+    /* background-color: #00365c; */
+    background-size: cover;
 }
 
 .banner .perfect_way {
-  text-align: center;
-  color: rgba(0, 0, 0, 0.772);
+    text-align: center;
+    color: rgba(0, 0, 0, 0.772);
 }
+
 .banner .perfect_way p {
-  font-size: 20px;
-  margin: 10px 0;
+    font-size: 20px;
+    margin: 10px 0;
 }
 
 .banner .perfect_way h1 {
-  font-size: 40px;
-  font-weight: 800;
+    font-size: 40px;
+    font-weight: 800;
 }
 
 .banner .perfect_way .cloud1 {
-  position: absolute;
-  top: -52px;
-  left: 40px;
+    position: absolute;
+    top: -52px;
+    left: 40px;
 }
 
 .banner .perfect_way .sun {
-  position: absolute;
-  top: -10px;
-  right: 250px;
+    position: absolute;
+    top: -10px;
+    right: 250px;
 }
 
 .banner .perfect_way .cloud2 {
-  position: absolute;
-  top: -52px;
-  right: 10px;
-}
-nav ul li {
-  display: none;
+    position: absolute;
+    top: -52px;
+    right: 10px;
 }
 
-.btn button {
-  display: none;
+.search_bar form {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid #00365c;
+    border-radius: 50px;
+    padding: 30px 30px;
+    margin: 80px 0;
 }
 
-@media (min-width: 576px) {
-  nav ul li {
-    display: none;
-  }
-
-  .btn button {
-    display: none;
-  }
+.search_bar .search img {
+    width: 20px;
+    cursor: pointer;
 }
 
-@media (min-width: 768px) {
-  nav ul li {
-    display: block;
-  }
+.search_bar input {
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background: rgba(177, 174, 174, 0.153);
+    padding-left: 15px;
+    font-size: 16px;
+}
 
-  .btn button {
-    display: block;
-  }
+.search_bar .search input {
+    width: 200px;
+    height: 40px;
+}
 
-  .btn i {
-    display: none;
-  }
+.search_bar .looking input {
+    width: 400px;
+    height: 40px;
+}
+
+.search_bar .select {
+    background: rgba(177, 174, 174, 0.153);
+    width: 8%;
+    height: 40px;
+    border-radius: 30px;
+    overflow: hidden;
+
+}
+
+.search_bar select {
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 0 5px;
+}
+
+.search_bar .btn2 button {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    background: #74b927;
+    color: #fff;
+    transition: all .5s;
+}
+
+.search_bar .btn2 button:hover {
+    color: #74b927;
+    background: #fff;
+    border: 2px solid #74b927;
+    cursor: pointer;
+}
+
+.home-img img {
+    width: 100%;
+}
+
+
+/* -------------------- section-3 ----------------- */
+.bg-color {
+    background: #00365c;
+}
+
+.insight {
+    text-align: center;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.insight h2 {
+    font-size: 35px;
+}
+
+.insight span {
+    font-weight: 800;
+}
+
+.boxes {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    background: #fff;
+    color: black;
+    border-radius: 15px;
+    font-weight: 600;
+    width: 150px;
+    height: 140px;
+    margin: 40px 10px;
+    transition: all 0.5s;
+}
+
+.boxes .box img {
+    width: 80px;
+    margin: 10px 0;
+}
+
+.boxes .box:hover {
+    background: #74b927;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+/* -------------------- section-4 ----------------- */
+.trending {
+    margin: 30px 0;
+}
+
+.trending h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.trending span {
+    font-weight: 800;
+}
+
+
+.slider {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    border-radius: 20px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 30px !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+.slick-next {
+    right: 60px !important;
+}
+
+.slick-prev {
+    left: 50px !important;
+    z-index: 100;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black !important;
+}
+
+
+.slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: .2;
+}
+
+.slick-active {
+    opacity: .5;
+}
+
+.slick-current {
+    opacity: 1;
+}
+
+.texes {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: #fff;
+}
+
+.texes .text {
+    position: absolute;
+    bottom: 40px;
+    font-size: 20px;
+}
+
+.texes .text a {
+    color: #fff;
+}
+
+.texes .rate {
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.clippath {
+    position: absolute;
+    top: 0;
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
+    background: #c70000;
+    font-size: 35px;
+    color: #fff;
+    font-weight: 600;
+    z-index: 100;
+    height: 150px;
+    display: grid;
+    place-content: center;
+    width: 40%;
+    border-radius: 20px 0 0 0;
+}
+
+
+
+
+@media (max-width: 992px) {
+    main {
+        overflow-x: hidden;
+        height: 100vh;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 20px;
+        position: relative;
+    }
+
+    nav ul {
+        position: absolute;
+        display: block;
+        background-color: aqua;
+        height: 100vh;
+        width: 40%;
+        border-radius: 10px 0px 0 0;
+        top: 40px;
+        right: -50%;
+        z-index: 100;
+        transition: all 1s;
+    }
+
+    nav ul li {
+        padding: 15px 20px;
+    }
+
+    nav.active ul {
+        display: block;
+        right: 0%;
+    }
+
+    nav li button {
+        display: block;
+        width: 100px;
+        font-size: 12px;
+        height: 50px;
+        border-radius: 30px;
+        background: #00365c;
+        color: #fff;
+        border: none;
+        transition: all 0.4s;
+        cursor: pointer;
+    }
+
+    nav li button:hover {
+        background: #fff;
+        color: #00365c;
+        font-weight: 700;
+        border: 2px solid #00365c;
+    }
+
+    .btn button {
+        display: none;
+    }
+
+    .btn i {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        overflow-x: hidden;
+        height: 100vh;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    nav ul {
+        background-color: blue;
+        height: 100vh;
+        width: 50%;
+        border-radius: 10px 0px 0 0;
+    }
+
+    nav ul li {
+        padding: 15px 20px;
+    }
+
+    nav li button {
+        display: block;
+        width: 100px;
+        font-size: 12px;
+        height: 50px;
+        border-radius: 30px;
+        background: #00365c;
+        color: #fff;
+        border: none;
+        transition: all 0.4s;
+        cursor: pointer;
+    }
+
+    nav li button:hover {
+        background: #fff;
+        color: #00365c;
+        font-weight: 700;
+        border: 2px solid #00365c;
+    }
+
+
+    .btn button {
+        display: none;
+    }
+
+    .btn i {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        position: relative;
+    }
+
+    main {
+        height: 100vh;
+    }
+
+    nav ul {
+        display: block;
+        position: absolute;
+        background-color: greenyellow;
+        border-radius: 10px 0px 0 0;
+        right: -50%;
+        top: 40px;
+        width: 50%;
+        height: 100vh;
+        z-index: 100;
+        transition: all 1s;
+    }
+
+    nav ul li {
+        padding: 15px 20px;
+    }
+
+    nav.active ul li {
+        display: block;
+    }
+
+    nav li button {
+        display: block;
+        width: 100px;
+        font-size: 12px;
+        height: 50px;
+        border-radius: 30px;
+        background: #00365c;
+        color: #fff;
+        border: none;
+        transition: all 0.4s;
+        cursor: pointer;
+    }
+
+    nav li button:hover {
+        background: #fff;
+        color: #00365c;
+        font-weight: 700;
+        border: 2px solid #00365c;
+    }
+
+    .btn button {
+        display: none;
+    }
 }
